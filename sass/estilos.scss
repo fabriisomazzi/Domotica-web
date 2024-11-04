@@ -1,0 +1,93 @@
+@import 'partials/variables';
+@import 'partials/header-footer';
+@import 'partials/responsive';
+@import 'partials/cards';
+
+
+// Estilos generales
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $body-bg-color; /* Color de fondo general */
+    color: $text-color; /* Color del texto general */
+}
+
+// Encabezados
+h3, h4 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+// Párrafos
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+// Imágenes
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Logo
+.logo {
+    height: 65px; /* Altura del logo */
+    width: auto; /* Ancho automático para mantener la proporción */
+}
+
+// Sección principal (hero)
+.hero {
+    background-image: $hero-bg-image; /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir el área */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    padding: 50px 0; /* Espaciado superior e inferior */
+}
+
+// Sección Nosotros
+.nosotros-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra del bloque */
+}
+
+// Imágenes con sombra
+.shadow-img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra de imagen */
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05); /* Efecto hover de la imagen */
+    }
+}
+
+// Botón de servicios
+.btn-primary {
+    background: linear-gradient(90deg, $button-bg-start 0%, $button-bg-end 100%); /* Gradiente de fondo */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px 30px; /* Espaciado interno */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+
+    &:hover {
+        background: linear-gradient(90deg, $button-bg-end 0%, $button-bg-start 100%); /* Invertir colores en hover */
+    }
+}
+
+// Imágenes de columnas
+.col-md-6 img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 300px; /* Mantiene la altura fija */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+}
+
+
+
+

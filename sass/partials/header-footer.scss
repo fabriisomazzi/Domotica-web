@@ -1,0 +1,67 @@
+// Variables
+$header-bg-color: #2B6CB0;
+$header-text-color: white;
+$header-link-color: white;
+$header-link-hover-color: #ffdd57;
+$footer-bg-color: #2B6CB0;
+$footer-text-color: white;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$footer-padding: 20px;
+
+// Header
+header {
+    background-color: $header-bg-color;
+    color: $header-text-color;
+    padding: 20px;
+    box-shadow: 0 4px 8px $shadow-color;
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        a {
+            color: $header-link-color;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $header-link-hover-color;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    text-align: center;
+    padding: $footer-padding;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    a {
+        color: $footer-text-color;
+        text-decoration: underline;
+
+        &:hover {
+            color: $header-link-hover-color;
+        }
+    }
+}

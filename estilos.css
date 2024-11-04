@@ -1,0 +1,188 @@
+@charset "UTF-8";
+header {
+  background-color: #2B6CB0;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+header nav a:hover {
+  background-color: #ffdd57;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #2B6CB0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #ffdd57;
+}
+
+@media (max-width: 568px) {
+  .hero {
+    padding: 30px 0; /* Menos espaciado en pantallas pequeñas */
+  }
+  .btn-primary {
+    font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+  .social-icon {
+    width: 30px; /* Ancho más pequeño en pantallas pequeñas */
+    height: 30px; /* Alto más pequeño en pantallas pequeñas */
+  }
+  .navbar-nav {
+    text-align: center; /* Centrar navegación en pantallas pequeñas */
+  }
+  .nosotros-section {
+    padding: 20px; /* Menos padding en pantallas pequeñas */
+  }
+  .hero {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .card {
+    margin-bottom: 2rem;
+  }
+}
+.card {
+  max-width: 600px; /* Ancho máximo de los cards */
+  margin: 0 auto; /* Centrar cards */
+}
+
+.card-img-top {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 400px; /* Mantiene la proporción de la imagen */
+  max-width: 700px; /* Ajusta el ancho máximo deseado */
+  object-fit: cover; /* Ajuste de la imagen */
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+.project-card img {
+  width: 100%;
+  height: 250px;
+  transition: transform 0.3s;
+}
+.project-card img:hover {
+  transform: scale(1.05); /* Escalar imagen al hacer hover */
+}
+.project-card .project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.project-card .project-info:hover {
+  opacity: 1; /* Mostrar información al hacer hover */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EBF8FF; /* Color de fondo general */
+  color: #343a40; /* Color del texto general */
+}
+
+h3, h4 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  height: 65px; /* Altura del logo */
+  width: auto; /* Ancho automático para mantener la proporción */
+}
+
+.hero {
+  background-image: url("imagenes/fondo.jpg"); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir el área */
+  background-position: center; /* Centra la imagen */
+  color: white; /* Color del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  padding: 50px 0; /* Espaciado superior e inferior */
+}
+
+.nosotros-section {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra del bloque */
+}
+
+.shadow-img {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra de imagen */
+  transition: transform 0.3s ease;
+}
+.shadow-img:hover {
+  transform: scale(1.05); /* Efecto hover de la imagen */
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, rgb(43, 108, 176) 0%, rgb(80, 132, 184) 100%); /* Gradiente de fondo */
+  border: none; /* Sin borde */
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 10px 30px; /* Espaciado interno */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  color: white; /* Color del texto */
+  transition: background 0.3s ease; /* Transición suave para el fondo */
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, rgb(80, 132, 184) 0%, rgb(43, 108, 176) 100%); /* Invertir colores en hover */
+}
+
+.col-md-6 img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 300px; /* Mantiene la altura fija */
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+}
+
+/*# sourceMappingURL=estilos.css.map */
